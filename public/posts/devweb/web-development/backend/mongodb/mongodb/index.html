@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="MongoDB
+
+
+Database:
+
+
+Un conteneur pour les collections*. C&rsquo;est la meme chose qu&rsquo;une base de donnée en SQL.
+Dans la plupart du temps, chaque projet aura sa propre base de donnée remplis de différentes collections.
+
+
+Collection:
+
+
+Une Collection est un groupement de document à l&rsquo;intérieur d&rsquo;une base de données.
+
+
+Document:
+
+
+Un enregistrement à l&rsquo;intérieur d&rsquo;une collection. Il y aura un document par objet dans la collection. Un document est également un objet JSON.">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/devweb/web-development/backend/mongodb/mongodb/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/devweb/web-development/backend/mongodb/mongodb/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="My New Hugo Site">
+  <meta property="og:description" content="MongoDB Database: Un conteneur pour les collections*. C’est la meme chose qu’une base de donnée en SQL. Dans la plupart du temps, chaque projet aura sa propre base de donnée remplis de différentes collections.
+Collection: Une Collection est un groupement de document à l’intérieur d’une base de données.
+Document: Un enregistrement à l’intérieur d’une collection. Il y aura un document par objet dans la collection. Un document est également un objet JSON.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta itemprop="name" content="My New Hugo Site">
+  <meta itemprop="description" content="MongoDB Database: Un conteneur pour les collections*. C’est la meme chose qu’une base de donnée en SQL. Dans la plupart du temps, chaque projet aura sa propre base de donnée remplis de différentes collections.
+Collection: Une Collection est un groupement de document à l’intérieur d’une base de données.
+Document: Un enregistrement à l’intérieur d’une collection. Il y aura un document par objet dans la collection. Un document est également un objet JSON.">
+  <meta itemprop="wordCount" content="255">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My New Hugo Site">
+  <meta name="twitter:description" content="MongoDB Database: Un conteneur pour les collections*. C’est la meme chose qu’une base de donnée en SQL. Dans la plupart du temps, chaque projet aura sa propre base de donnée remplis de différentes collections.
+Collection: Une Collection est un groupement de document à l’intérieur d’une base de données.
+Document: Un enregistrement à l’intérieur d’une collection. Il y aura un document par objet dans la collection. Un document est également un objet JSON.">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="mongodb">MongoDB</h1>
+<ul>
+<li>
+<h3 id="database">Database:</h3>
+</li>
+</ul>
+<p>Un conteneur pour les collections*. C&rsquo;est la meme chose qu&rsquo;une base de donnée en SQL.
+Dans la plupart du temps, chaque projet aura sa propre base de donnée remplis de différentes collections.</p>
+<ul>
+<li>
+<h3 id="collection">Collection:</h3>
+</li>
+</ul>
+<p>Une Collection est un groupement de document à l&rsquo;intérieur d&rsquo;une base de données.</p>
+<ul>
+<li>
+<h3 id="document">Document:</h3>
+</li>
+</ul>
+<p>Un enregistrement à l&rsquo;intérieur d&rsquo;une collection. Il y aura un document par objet dans la collection. Un document est également un objet JSON.</p>
+<ul>
+<li>
+<h3 id="field">Field:</h3>
+</li>
+</ul>
+<p>Une paire clé-valeur dans un document. Chaque document comporte un certain nombre de champs qui contiennent des infromations.
+Comme par exemple, le nom, l&rsquo;adresse, les loisirs etc&hellip;</p>
+<h2 id="commands-de-base">Commands de base:</h2>
+<ul>
+<li>==show dbs==: Montre l&rsquo;ensemble des base de donneés,</li>
+<li>==use &ldquo;dbname&rdquo;==: change la base de donnée par celle sélectionné</li>
+<li>==db==: affiche le nom de la base de donnée actuelle,</li>
+<li>==show collections==: affiche toutes les collections de la base de donnée actuelle</li>
+<li>db.dropDatabase(): supprime la base de donnée actuelle,</li>
+</ul>
+<h2 id="opérateur">opérateur</h2>
+<p>.limit(): limite les résultats de la requte dans un ordre spécifée
+.sort(): utilisé pour renvoyer les résultats de la requete, entre () utiliser 1 pour l&rsquo;ordre croissant, et -1 pour l&rsquo;ordre décroissant.</p>
+<h3 id="pipeline-aggregation">Pipeline Aggregation</h3>
+<ul>
+<li>$project: signifie les champs de documents de sortie, 1 inclus, 0 exclus.</li>
+<li>$set: crée de nouveaux champ oiu moodifie la valeur des champs existants.</li>
+<li>$count: crée un nouveau documents, avec le nbr de documents à cette étape.</li>
+<li>$limit</li>
+<li>$out: crée une nouvelle collection avec les résultat dedans</li>
+<li>$sort</li>
+<li>$match</li>
+<li>$group</li>
+</ul>
+<p>db.collection.findAndModify()
+db.collection.replaceOne()</p>
+<p>db.collection.countDocuments():
+permet de compter le nombre de documents qui correspondent à une requete</p>
+<pre tabindex="0"><code>db.collection.countDocuments( &lt;query&gt;, &lt;options&gt; )
+</code></pre><p>.db.collection.aggregate()</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  My New Hugo Site 2024 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

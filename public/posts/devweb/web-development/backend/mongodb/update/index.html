@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Update
+
+==db.collection.updateOne()==:
+Utilité: Metter à jour le premier document au sein de la collection qui correspond au filtre
+Paramètre:
+filtre: les critères de solution pour la mise à jour
+update: les modifications à appliquer
+upsert: falcultatif
+
+db.users.updateOne({ age: 20 }, { $set: { age: 21 } })
+//fais passer le 1 document dont l&#39;age = 20 à 21
+
+==db.collection.updateMany()==:
+Utilité: Metter à jour tous les documenst au sein de la collection en fonction du filtre
+Paramètre:
+les meme  que le updateOne()
+
+db.users.updateMany({ age: 12 }, { $inc: { age: 3 } })
+// fais tous les documents dont l&#39;age = 12 en ajoutant 3.
+">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/devweb/web-development/backend/mongodb/update/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/devweb/web-development/backend/mongodb/update/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="My New Hugo Site">
+  <meta property="og:description" content="Update ==db.collection.updateOne()==: Utilité: Metter à jour le premier document au sein de la collection qui correspond au filtre Paramètre: filtre: les critères de solution pour la mise à jour update: les modifications à appliquer upsert: falcultatif db.users.updateOne({ age: 20 }, { $set: { age: 21 } }) //fais passer le 1 document dont l&#39;age = 20 à 21 ==db.collection.updateMany()==: Utilité: Metter à jour tous les documenst au sein de la collection en fonction du filtre Paramètre: les meme que le updateOne() db.users.updateMany({ age: 12 }, { $inc: { age: 3 } }) // fais tous les documents dont l&#39;age = 12 en ajoutant 3.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta itemprop="name" content="My New Hugo Site">
+  <meta itemprop="description" content="Update ==db.collection.updateOne()==: Utilité: Metter à jour le premier document au sein de la collection qui correspond au filtre Paramètre: filtre: les critères de solution pour la mise à jour update: les modifications à appliquer upsert: falcultatif db.users.updateOne({ age: 20 }, { $set: { age: 21 } }) //fais passer le 1 document dont l&#39;age = 20 à 21 ==db.collection.updateMany()==: Utilité: Metter à jour tous les documenst au sein de la collection en fonction du filtre Paramètre: les meme que le updateOne() db.users.updateMany({ age: 12 }, { $inc: { age: 3 } }) // fais tous les documents dont l&#39;age = 12 en ajoutant 3.">
+  <meta itemprop="wordCount" content="104">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My New Hugo Site">
+  <meta name="twitter:description" content="Update ==db.collection.updateOne()==: Utilité: Metter à jour le premier document au sein de la collection qui correspond au filtre Paramètre: filtre: les critères de solution pour la mise à jour update: les modifications à appliquer upsert: falcultatif db.users.updateOne({ age: 20 }, { $set: { age: 21 } }) //fais passer le 1 document dont l&#39;age = 20 à 21 ==db.collection.updateMany()==: Utilité: Metter à jour tous les documenst au sein de la collection en fonction du filtre Paramètre: les meme que le updateOne() db.users.updateMany({ age: 12 }, { $inc: { age: 3 } }) // fais tous les documents dont l&#39;age = 12 en ajoutant 3.">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="update">Update</h1>
+<ul>
+<li>==db.collection.updateOne()==:
+<strong>Utilité</strong>: Metter à jour le premier document au sein de la collection qui correspond au filtre
+<strong>Paramètre</strong>:</li>
+<li>filtre: les critères de solution pour la mise à jour</li>
+<li>update: les modifications à appliquer</li>
+<li>upsert: falcultatif</li>
+</ul>
+<pre tabindex="0"><code>db.users.updateOne({ age: 20 }, { $set: { age: 21 } })
+//fais passer le 1 document dont l&#39;age = 20 à 21
+</code></pre><ul>
+<li>==db.collection.updateMany()==:
+<strong>Utilité</strong>: Metter à jour tous les documenst au sein de la collection en fonction du filtre
+Paramètre:</li>
+<li>les meme  que le updateOne()</li>
+</ul>
+<pre tabindex="0"><code>db.users.updateMany({ age: 12 }, { $inc: { age: 3 } })
+// fais tous les documents dont l&#39;age = 12 en ajoutant 3.
+</code></pre><ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  My New Hugo Site 2024 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

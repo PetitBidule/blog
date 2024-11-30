@@ -1,0 +1,1 @@
+Telnet est un protocole d'application qui vous permet, à l'aide d'un client telnet, de vous connecter et d'exécuter des commandes sur une machine distante hébergeant un serveur telnet. 

@@ -1,0 +1,308 @@
+{
+  "main": {
+    "id": "26a8fa750133feac",
+    "type": "split",
+    "children": [
+      {
+        "id": "5bb969875cc87978",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2002ae00915198b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networking/Adresse IP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Adresse IP"
+            }
+          },
+          {
+            "id": "dc5887f7c5f5fb39",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networking/OSI Model.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "OSI Model"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3efe3b611f7f06e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "484e4aef287f9ee9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "31e25b30e13772b8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorateur de fichiers"
+            }
+          },
+          {
+            "id": "4a02f4745a1bcd80",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "osi",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Rechercher"
+            }
+          },
+          {
+            "id": "be6c5c3f4c26768d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Signet"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 366.5110321044922
+  },
+  "right": {
+    "id": "4f311b3ba88be9f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "d6cc2adafb1d8a65",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a9ef441bb173e572",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              },
+              "icon": "lucide-tags",
+              "title": "Mots-clés"
+            }
+          },
+          {
+            "id": "951a1ae35567bd96",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Networking/OSI Model.md"
+              },
+              "icon": "lucide-list",
+              "title": "Plan de OSI Model"
+            }
+          },
+          {
+            "id": "24556b4e11f826e1",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Toutes les propriétés"
+            }
+          },
+          {
+            "id": "88db5f62ab87a88b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevWeb/Others/Cyber Security/Basics.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Basics"
+            }
+          },
+          {
+            "id": "314799e89dd46e30",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vue graphique"
+            }
+          },
+          {
+            "id": "e0cf7eae10f4ea7f",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "DevWeb/UI_UX/Skeuomorphisme.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": false,
+                  "textFadeMultiplier": -3,
+                  "nodeSizeMultiplier": 2.06034975017844,
+                  "lineSizeMultiplier": 2.00438972162741,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.430196614008506,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graphique de Skeuomorphisme"
+            }
+          },
+          {
+            "id": "35c1c84ae53ef44d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Networking/OSI Model.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Rétrolien pour OSI Model"
+            }
+          },
+          {
+            "id": "f9a573dcd8494c92",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Networking/OSI Model.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Liens sortants de OSI Model"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 759.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
+      "random-note:Ouvre une note au hasard": false,
+      "workspaces:Gérer les espaces de travail": false,
+      "media-extended:Open media": false
+    }
+  },
+  "active": "dc5887f7c5f5fb39",
+  "lastOpenFiles": [
+    "DevWeb/UI_UX/Skeuomorphisme.md",
+    "DevWeb/Terminal/Command Line Terminal.md",
+    "DevWeb/Terminal/Git Bash/Git.md",
+    "Networking/Subnet Mask.md",
+    "DevWeb/Typescript/Typescript.md",
+    "DevWeb/Others/Cyber Security/Basics.md",
+    "DevWeb/Web development/Backend/sql/sql.md",
+    "Networking/Default Gateway.md",
+    "DevWeb/Others/Networking/Networking.md",
+    "zFiles/Img/Pasted image 20241125200014.png",
+    "DevWeb/Atlassian/Atlassian.md",
+    "DevMobile",
+    "Loopback.md",
+    "DevWeb/Web development/Three.js (react three fiber)/Three.js (react three fiber).md",
+    "DevWeb/Web development/Three.js (react three fiber)",
+    "DevWeb/Web development/React/React.md",
+    "DevWeb/Web development/React",
+    "DevWeb/Web development/Frontend/Tricks JS/Trick JS.md",
+    "DevWeb/Web development/Frontend/Tricks JS",
+    "DevWeb/Web development/Frontend/JS Navigateur/LocalStorage/LocalStorage & SessionStorage.md",
+    "DevWeb/Web development/Frontend/JS Navigateur/JS Ecouteurs d_Evènements/Ecouteurs d_Evènement.md",
+    "DevWeb/Web development/Frontend/JS Navigateur/DOMTokenList/_ DOMTokenList.md",
+    "DevWeb/Web development/Frontend/JS Navigateur/Element/Element.md",
+    "DevWeb/Web development/Frontend/JS Navigateur/LocalStorage",
+    "DevWeb/Web development/Frontend/JS Navigateur/JS Ecouteurs d_Evènements",
+    "DevWeb/Web development/Frontend/JS Navigateur/JS côté navigateur.md",
+    "DevWeb/Web development/Frontend/JS Navigateur/DOMTokenList",
+    "DevWeb/Web development/Frontend/JS Navigateur/Element",
+    "DevWeb/Web development/Frontend/JS Navigateur",
+    "DevWeb/Web development/Frontend/JS Base/Sucre Syntaxique/Sucre Syntaxique.md",
+    "DevWeb/Web development/Frontend/JS Base/Sucre Syntaxique",
+    "DevWeb/Web development/Frontend/JS Base/Promise/Synchrone/Synchrone & Asynchrone.md",
+    "DevWeb/Web development/Frontend/JS Base/Promise/Promise.md",
+    "DevWeb/Web development/Frontend/JS Base/POO JS/POO JS.md",
+    "DevWeb/Web development/Frontend/JS Base/POO JS/Object Literals _ littéraux objet.md",
+    "DevWeb/Web development/Frontend/JS Base/POO JS/Constructeur & this.md",
+    "DevWeb/Web development/Frontend/JS Base/POO JS/Héritage.md",
+    "zFiles/Img/Pasted image 20241125202709.png",
+    "zFiles/Img/Pasted image 20241125202356.png",
+    "zFiles/Img/Pasted image 20241125201642.png",
+    "zFiles/Img/Pasted image 20241125201252.png",
+    "zFiles/Img/Pasted image 20241125200057.png",
+    "zFiles/Img/Pasted image 20241115094324.png",
+    "zFiles/Img/Pasted image 20241116181521.png",
+    "zFiles/Img/Pasted image 20241116181006.png",
+    "zFiles/Img/Pasted image 20241116175616.png",
+    "Cyber/Web Hacking/Sans titre.canvas",
+    "Sans titre 1.canvas"
+  ]
+}

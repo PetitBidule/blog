@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Flutter
+Interface entre le code et le dispositif physique
+
+Lorsque nous écrivons une application Flutter, en utilisant Dart, nous restons au niveau du Flutter Framework (partie en vert).
+Le Framework Flutter intéragit avec Le Flutter Engine (partie en bleu) (pour en savoir plus sur Flutter Engine) , via une couche d&rsquo;abstraction, appelée Window. Cette couche d&rsquo;abstraction expose une série d&rsquo;API pour communiquer, indirectement avec l&rsquo;appareil.">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/devmobile/flutter/flutter/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/devmobile/flutter/flutter/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="My New Hugo Site">
+  <meta property="og:description" content="Flutter Interface entre le code et le dispositif physique Lorsque nous écrivons une application Flutter, en utilisant Dart, nous restons au niveau du Flutter Framework (partie en vert).
+Le Framework Flutter intéragit avec Le Flutter Engine (partie en bleu) (pour en savoir plus sur Flutter Engine) , via une couche d’abstraction, appelée Window. Cette couche d’abstraction expose une série d’API pour communiquer, indirectement avec l’appareil.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta itemprop="name" content="My New Hugo Site">
+  <meta itemprop="description" content="Flutter Interface entre le code et le dispositif physique Lorsque nous écrivons une application Flutter, en utilisant Dart, nous restons au niveau du Flutter Framework (partie en vert).
+Le Framework Flutter intéragit avec Le Flutter Engine (partie en bleu) (pour en savoir plus sur Flutter Engine) , via une couche d’abstraction, appelée Window. Cette couche d’abstraction expose une série d’API pour communiquer, indirectement avec l’appareil.">
+  <meta itemprop="wordCount" content="1034">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My New Hugo Site">
+  <meta name="twitter:description" content="Flutter Interface entre le code et le dispositif physique Lorsque nous écrivons une application Flutter, en utilisant Dart, nous restons au niveau du Flutter Framework (partie en vert).
+Le Framework Flutter intéragit avec Le Flutter Engine (partie en bleu) (pour en savoir plus sur Flutter Engine) , via une couche d’abstraction, appelée Window. Cette couche d’abstraction expose une série d’API pour communiquer, indirectement avec l’appareil.">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="flutter">Flutter</h1>
+<h3 id="interface-entre-le-code-et-le-dispositif-physique">Interface entre le code et le dispositif physique</h3>
+<p><img src="https://www.flutteris.com/_image_/internals_archi_overview.png" alt="cycle de vie d&rsquo;un widget avec état"></p>
+<p>Lorsque nous écrivons une application Flutter, en utilisant Dart, nous restons au niveau du Flutter Framework (partie en vert).</p>
+<p>Le Framework Flutter intéragit avec Le Flutter Engine (partie en bleu) (<a href="https://github.com/flutter/engine?tab=readme-ov-file">pour en savoir plus sur Flutter Engine</a>) , via une couche d&rsquo;abstraction, appelée Window. Cette couche d&rsquo;abstraction expose une série d&rsquo;API pour communiquer, indirectement avec l&rsquo;appareil.</p>
+<p>C&rsquo;est également via cette couche d&rsquo;abstraction que le moteur Flutter notifie le cadre Flutter lorsque, entre autres:</p>
+<ul>
+<li>Un évènement intéressant se produit au niveau de l&rsquo;appareil (changement d&rsquo;orientation, changement de paramètres, problèmes de mémoire, état d&rsquo;exécution de l&rsquo;application&hellip;)</li>
+</ul>
+<h3 id="flutter-framework-est-piloté-par-le-moteur-de-rendu-de-cadre-flutter-engine">Flutter Framework est piloté par le moteur de rendu de cadre Flutter Engine.</h3>
+<p>Aucun code du Framework Flutter n&rsquo;est exécuté sans avoir été déclenché par le rendu du moteur Flutter.</p>
+<p>Ceci explique le processus de mise a jour du rendu dans le moteur Flutter.
+<img src="https://www.flutteris.com/_image_/internals_flow.gif" alt="cycle de vie d&rsquo;un widget avec état">
+Comme dit un peu plus haut, des évènement externes tels que des gestes utilisateurs , des réponses HTTP peuvent déclencher des taches nécessitant une mise a jour du rendu.</p>
+<ul>
+<li>Lorsqu&rsquo;une mise a jour du rendu est nécessaire, un message est envoyé au moteur Flutter pour le notifier. C&rsquo;est ce qu&rsquo;on appelle le &ldquo;<strong>Schedule Frame</strong>&rdquo;.</li>
+<li>Ensuite lorsque le moteur Flutter est prêt à effectuer le rendu, il émet une requête <strong>Begin Frame</strong>.</li>
+<li>Cette dernière est intercéptée par le Framework. Des taches liées aux &ldquo;Tickers&rdquo; (exemple: les animations.) sont exécutées.</li>
+<li>Ces tâches peuvent éventuellement générer de nouvelles requêtes pour des rendus ultérieurs. Par exemple, une animation incomplète pourrait demander un autre &ldquo;Begin Frame&rdquo; ultérieurement.</li>
+<li>Le moteur Flutter émet ensuite une requête <strong>Draw Frame</strong>.</li>
+<li>Cette requête &ldquo;Draw Frame&rdquo; est interceptée par le framework Flutter. Il effectue des tâches liées à la mise à jour de la disposition en termes de structure et de taille.</li>
+<li>Une fois ces tâches terminées, le framework procède aux tâches liées à la mise à jour de l&rsquo;apparence visuelle des widgets (comme l&rsquo;opacité, les ombres, les couleurs&hellip;).</li>
+<li>S&rsquo;il y a quelque chose à dessiner à l&rsquo;écran, le framework envoie la nouvelle scène à rendre au moteur Flutter.</li>
+<li>Enfin, le framework Flutter exécute toutes les tâches à effectuer après le rendu complet (appelées &ldquo;PostFrame callbacks&rdquo;) et d&rsquo;autres tâches non liées au rendu.</li>
+<li>Ce flux de travail est répétée, créant ainsi un cycle continu de mise à jour.</li>
+</ul>
+<h2 id="renderview-et-renderobject">RenderView et RenderObject</h2>
+<p>Tout finit par devenir une série de pixels à afficher sur l&rsquo;écran d&rsquo;un iphone ou d&rsquo;une tablette etc, le Framework Flutter convertit les Widgets que nous utilisons pour développer nos applications en ==parties visuelles== qui seront rendues sur l&rsquo;écran.</p>
+<p>Ces ==parties visuelles== qui sont rendues à l&rsquo;écran correspondent à des objets, appelés ==RenderObjects== qui sont utilisés pour:</p>
+<ul>
+<li>Définir une zone de l&rsquo;écran en termes de dimensions, de position, de géométrie mais aussi en termes de &ldquo;contenu de rendu&rdquo;.</li>
+<li>Identifier les zones de l&rsquo;écran potentiellement impactées par les gestes (appuie sur un bouton par exemple).</li>
+<li>L&rsquo;ensemble des RenderObject forme un arbre, appelée ==Render Tree==. Au sommet de cet arbre, on trouve un RenderView == représente la surface de sortie totale du Render Tree.</li>
+</ul>
+<p><img src="https://www.flutteris.com/_image_/internals_renderView.png" alt="alt text"></p>
+<h3 id="widget">Widget:</h3>
+<p>Dans le contexte de Flutter, le terme &ldquo;widget&rdquo; fait référence à tout élément d&rsquo;interface utilisateur, qu&rsquo;il s&rsquo;agisse d&rsquo;un bouton, d&rsquo;un champ de texte, d&rsquo;une image, etc. Chaque composant de l&rsquo;interface utilisateur que vous construisez est un widget.</p>
+<p>StatelessWidget = widget sans état ne changera pas<br>
+StatefulWidgets = widget avec état peut etre changé au fil du temps.
+Cycle de vie d&rsquo;un widget avec état:</p>
+<p><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Y9GSycXudnvPG41EZA1cXQ.png" alt="cycle de vie d&rsquo;un widget avec état"></p>
+<ul>
+<li>initState(): Cette méthode est appelée une fois lorsque l&rsquo;objet est inséré dans l&rsquo;arborescence.</li>
+<li>dispose(): Appelée lorsqeu cet objet est supprimé définitivement de l&rsquo;arborescence.</li>
+<li>didChangeDependencies(): Appelée lorsque cet objet State change.</li>
+<li>setState(): notifie au framework que l&rsquo;état de cet objet a changé et déclenche la consrtuction de cet objet State et met a jour l&rsquo;interface utilisateur.</li>
+</ul>
+<h1 id="différence-entre-final-et-const-et-late">différence entre final et const et late:</h1>
+<h2 id="final">final:</h2>
+<ul>
+<li>une variable avec le final mot clé sera initialisée au moment de l&rsquo;éxecution et ne pourra etre affectée qu&rsquo;une seule fois.</li>
+<li>on peut le définir dans une classe et une fonction.</li>
+</ul>
+<h2 id="const">const:</h2>
+<ul>
+<li>const est initialisée au moment de la compilation et est déjà affectée au moment de l&rsquo;exécution.</li>
+<li>on ne peut pas le définir à l&rsquo;intérieur d&rsquo;une classe, mais on peut dans une fonction.</li>
+</ul>
+<h2 id="late">late</h2>
+<p>late est utilisée pour déclarer des variables qui seront initialisées plus tard</p>
+<p>Quand l&rsquo;utiliser?<br>
+Final: si on ne sait pas quelle sera la valeur au moment de la compilation<br>
+Const: si le valeur ne sera pas modifiée lors de l&rsquo;exécution: Exemple: lorsqu&rsquo;on délcare une phrase qui reste toujours la meme.</p>
+<hr>
+<h2 id="override">@override:</h2>
+<p>Souligne simplement que la fonction est également définie dans une classe ancêtre, mais qu&rsquo;elle est en cours de redéfinition pour faire autre chose dans la classe actuelle. Il est également utilisé pour annoter l&rsquo;implémentation d&rsquo;une méthode abstraite. Son utilisation est facultative mais recommandée car elle améliore la lisibilité.</p>
+<hr>
+<h2 id="bool-utilisation">bool? utilisation:</h2>
+<p>L&rsquo;utilisation d&rsquo;un point d&rsquo;un point d&rsquo;interrogation après un type comme le bool, int etc, indique que cette variable peut avoir une valeur null.</p>
+<hr>
+<h2 id="underscore-variable">underscore variable:</h2>
+<p>L&rsquo;underscore devant le nom d&rsquo;une variable est une convention pour indiquer que cette variable est privée à la portée de son fichier ou de sa classe.</p>
+<hr>
+<h2 id="voidcallback">VoidCallback</h2>
+<p>Type de fonction qui ne prend aucun argument et ne retourne rien.
+Par exemple un voidCallback pourrait etre utilisée pour définir ce qui doit se passer lorsque l&rsquo;utilisateur appuie sur un boutton.</p>
+<hr>
+<h2 id="const-et-enum">const et enum</h2>
+<p>const est utilisé pour créer des objets immuables
+enum permet de regrouper plusieurs variable immuables, en gro plusieur const.
+Exemple:
+Au lieu d&rsquo;écrice ceci:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> notStarted <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Not Started&#39;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> inProgress <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;In Progress&#39;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> completed <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Completed&#39;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> onHold <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;On Hold&#39;</span>,
+</span></span></code></pre></div><p>Nous pouvons avoir ceci:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>enum Status {notStarted, inProgress, completed, onHold}
+</span></span></code></pre></div><hr>
+<h2 id="différence-entre-remove-et-removeat">différence entre remove et removeAt</h2>
+<p>on utilise removeAt quand nous ne connaisons pas la valeur, nous allons donc nous baser sur l&rsquo;index.
+removeAt prend en paramèter l&rsquo;index de la liste.
+à l&rsquo;inverse nous allons utiliser remove lorsqu&rsquo;on connait l&rsquo;élément de la liste.
+il prend en paramètre l&rsquo;élément et le supprime</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> maListe <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">3</span>];
+</span></span><span style="display:flex;"><span>maListe.remove(<span style="color:#ae81ff">3</span>); <span style="color:#75715e">// Supprime la première occurrence du 3 dans la liste
+</span></span></span></code></pre></div><h2 id="dispose-method">dispose() method</h2>
+<p>la method dispose permet de gérer les ressources, de libérer de la mémoire et d&rsquo;éviter les fuites de mémoire</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  My New Hugo Site 2024 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

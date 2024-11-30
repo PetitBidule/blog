@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Redux
+Redux est une bibliothèque de gestion d&rsquo;état pour les applications JS
+Redux aide à centraliser et à gérer l&rsquo;état de ton application en suivant un flux de données prédictible.
+Actions Redux
+Les actions redux décrivent comment faire quelque chose.
+Dans redux, une action est un simple objet JS qui explique l&rsquo;action à effectuer sur notre état afin de le manipuler.
+Exemple d&rsquo;action Redux:
+
+const action = {
+	type: &#34;MANGER_UN_KIWI&#34;
+}
+
+Les actions Redux auront TOUJOURS une propriété TYPE décrivant quoi faire
+Le type d&rsquo;actions est écrit en lettre majuscules;
+L&rsquo;actions redux, peux avoir une propriété payload, qui peut donner des détails sur l&rsquo;action
+Exemple
+
+
+const action = {
+  type: &#39;BUY_APPLES&#39;,
+  payload: {
+    shop: &#39;Simba supermarket&#39;,
+    type: &#39;red&#39;,
+    number: 10,
+  }
+};
+
+Réducteurs Redux
+Un réducteur est une fonction pure qui prendra l&rsquo;état initial et l&rsquo;action souhaitée, effectuera l&rsquo;action souhaitée et renverra un état mis à jour.">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/devweb/redux/redux/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/devweb/redux/redux/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="My New Hugo Site">
+  <meta property="og:description" content="Redux Redux est une bibliothèque de gestion d’état pour les applications JS Redux aide à centraliser et à gérer l’état de ton application en suivant un flux de données prédictible.
+Actions Redux Les actions redux décrivent comment faire quelque chose. Dans redux, une action est un simple objet JS qui explique l’action à effectuer sur notre état afin de le manipuler.
+Exemple d’action Redux:
+const action = { type: &#34;MANGER_UN_KIWI&#34; } Les actions Redux auront TOUJOURS une propriété TYPE décrivant quoi faire Le type d’actions est écrit en lettre majuscules; L’actions redux, peux avoir une propriété payload, qui peut donner des détails sur l’action Exemple const action = { type: &#39;BUY_APPLES&#39;, payload: { shop: &#39;Simba supermarket&#39;, type: &#39;red&#39;, number: 10, } }; Réducteurs Redux Un réducteur est une fonction pure qui prendra l’état initial et l’action souhaitée, effectuera l’action souhaitée et renverra un état mis à jour.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta itemprop="name" content="My New Hugo Site">
+  <meta itemprop="description" content="Redux Redux est une bibliothèque de gestion d’état pour les applications JS Redux aide à centraliser et à gérer l’état de ton application en suivant un flux de données prédictible.
+Actions Redux Les actions redux décrivent comment faire quelque chose. Dans redux, une action est un simple objet JS qui explique l’action à effectuer sur notre état afin de le manipuler.
+Exemple d’action Redux:
+const action = { type: &#34;MANGER_UN_KIWI&#34; } Les actions Redux auront TOUJOURS une propriété TYPE décrivant quoi faire Le type d’actions est écrit en lettre majuscules; L’actions redux, peux avoir une propriété payload, qui peut donner des détails sur l’action Exemple const action = { type: &#39;BUY_APPLES&#39;, payload: { shop: &#39;Simba supermarket&#39;, type: &#39;red&#39;, number: 10, } }; Réducteurs Redux Un réducteur est une fonction pure qui prendra l’état initial et l’action souhaitée, effectuera l’action souhaitée et renverra un état mis à jour.">
+  <meta itemprop="wordCount" content="564">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My New Hugo Site">
+  <meta name="twitter:description" content="Redux Redux est une bibliothèque de gestion d’état pour les applications JS Redux aide à centraliser et à gérer l’état de ton application en suivant un flux de données prédictible.
+Actions Redux Les actions redux décrivent comment faire quelque chose. Dans redux, une action est un simple objet JS qui explique l’action à effectuer sur notre état afin de le manipuler.
+Exemple d’action Redux:
+const action = { type: &#34;MANGER_UN_KIWI&#34; } Les actions Redux auront TOUJOURS une propriété TYPE décrivant quoi faire Le type d’actions est écrit en lettre majuscules; L’actions redux, peux avoir une propriété payload, qui peut donner des détails sur l’action Exemple const action = { type: &#39;BUY_APPLES&#39;, payload: { shop: &#39;Simba supermarket&#39;, type: &#39;red&#39;, number: 10, } }; Réducteurs Redux Un réducteur est une fonction pure qui prendra l’état initial et l’action souhaitée, effectuera l’action souhaitée et renverra un état mis à jour.">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="redux">Redux</h1>
+<p>Redux est une bibliothèque de gestion d&rsquo;état pour les applications JS
+Redux aide à centraliser et à gérer l&rsquo;état de ton application en suivant un flux de données prédictible.</p>
+<h2 id="actions-redux">Actions Redux</h2>
+<p>Les actions redux décrivent comment faire quelque chose.
+Dans redux, une action est un simple objet JS qui explique l&rsquo;action à effectuer sur notre état afin de le manipuler.</p>
+<p>Exemple d&rsquo;action Redux:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">action</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;MANGER_UN_KIWI&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Les actions Redux auront TOUJOURS une propriété TYPE décrivant quoi faire</li>
+<li>Le type d&rsquo;actions est écrit en lettre majuscules;</li>
+<li>L&rsquo;actions redux, peux avoir une propriété payload, qui peut donner des détails sur l&rsquo;action
+Exemple</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">action</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;BUY_APPLES&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">payload</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">shop</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Simba supermarket&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">number</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><hr>
+<h2 id="réducteurs-redux">Réducteurs Redux</h2>
+<p>Un réducteur est une fonction pure qui prendra l&rsquo;état initial et l&rsquo;action souhaitée, effectuera l&rsquo;action souhaitée et renverra un état mis à jour.</p>
+<p>Un réducteur doit être pur pour qu&rsquo;il marche toujours de manière cohérente.</p>
+<p>Exemple de réducteurs:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">count</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">incrementAction</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;INCREMENT&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">decrementAction</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;DECREMENT&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">reducer</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">state</span>, <span style="color:#a6e22e">action</span>)=&gt;{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">switch</span>(<span style="color:#a6e22e">action</span>.<span style="color:#a6e22e">type</span>) {
+</span></span><span style="display:flex;"><span>	  <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;INCREMENT&#39;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>		  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newState</span> <span style="color:#f92672">=</span> { ...<span style="color:#a6e22e">state</span> };
+</span></span><span style="display:flex;"><span>		  <span style="color:#a6e22e">newState</span>.<span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">value</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>		  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">newState</span>;
+</span></span><span style="display:flex;"><span>	  } 
+</span></span><span style="display:flex;"><span>	  <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;DECREMENT&#34;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>		  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newState</span> <span style="color:#f92672">=</span> { ...<span style="color:#a6e22e">state</span> };
+</span></span><span style="display:flex;"><span>		  <span style="color:#a6e22e">newState</span>.<span style="color:#a6e22e">valur</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">value</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>		  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">newState</span>;
+</span></span><span style="display:flex;"><span>	  }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>explication:</p>
+<ul>
+<li>const newState = { &hellip;state }: un réducteur est une fonction pure et ne mutera jamais l&rsquo;état qui lui est passé en argument.
+On crée un nouvel objet et copions l&rsquo;état précédent à l&rsquo;aide du spread syntax</li>
+</ul>
+<hr>
+<h2 id="selecteurs">Selecteurs</h2>
+<p>Les sélecteurs</p>
+<hr>
+<h2 id="redux-store">Redux store</h2>
+<p>Lorsque nous mettons à jour l&rsquo;état avec la fonction de réduction, le nouvel état remplace l&rsquo;ancien état.</p>
+<p>C&rsquo;est redux store, c&rsquo;est comme un magasin réel qui conserve des enregistrements de la façon dont l&rsquo;état change dans l&rsquo;application.</p>
+<p>Pour créer ce magasin, on utilise la fonction createStore(), cette dernière fournit d&rsquo;autres fonctions pour manipuler l&rsquo;état.</p>
+<p>Exemple:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">configureStore</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@reduxjs/toolkit&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">store</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">configureStore</span>({ <span style="color:#a6e22e">reducer</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">counterReducer</span> })
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">store</span>.<span style="color:#a6e22e">getState</span>())
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// {value: 0}
+</span></span></span></code></pre></div><p>Nous avons par exemple:</p>
+<ul>
+<li>getState(): lorsqu&rsquo;on execute cette fonction, le magasin renverra la valeur actuelle de l&rsquo;état et cette valeur sera toujours l&rsquo;état mis à jour.</li>
+<li>dispatch(): on transmet l&rsquo;action à la dispatch fonction, et la magasin aura accès au réducteur et à l&rsquo;état lui-même et il fera tout pour toi.</li>
+</ul>
+<hr>
+<h2 id="quand-utiliser-redux">Quand utiliser redux</h2>
+<ul>
+<li>L&rsquo;état de l&rsquo;application est fréquemment mis a jour au fil du temps.</li>
+<li>La logique pour mettre à jour cet état peut être complexe</li>
+<li>L&rsquo;application dispose d&rsquo;une base de code taille moyenne ou grande et peut êtr utilisée par de nombreuses personnes.</li>
+<li>Tu disposes d&rsquo;une grande quantité d&rsquo;états d&rsquo;application qui sont nécessaires à de nombreux endroits de l&rsquo;application.</li>
+</ul>
+<hr>
+<h2 id="gestion-de-létat">Gestion de l&rsquo;état</h2>
+<p><img src="../_resources/0b3745c6ce2de8589af30bbb3cd1dfb8.png" alt="0b3745c6ce2de8589af30bbb3cd1dfb8.png"></p>
+<ul>
+<li>L&rsquo;état décrit l&rsquo;état de l&rsquo;application à un moment précis</li>
+<li>L&rsquo;interface utilisateur (UI) est rendue en fonction de cet état</li>
+<li>Lorsque quelque chose se produit (action fait par l&rsquo;utilisateur), l&rsquo;état est mis à jour en fonction de ce qui s&rsquo;est passé.</li>
+<li>L&rsquo;UI est restituée en fonction du nouvel état.</li>
+</ul>
+<p>Le problème est que si plusieurs composant doivent partager le même état ça devient plus complexe.</p>
+<p>Solution:</p>
+<p>Cette solution consiste à extraire l&rsquo;état partagé des composants et à le placer dans un &ldquo;emplacement centralisé&rdquo; en dehors de l&rsquo;arborescence des composants.
+Ainsi, chaque composant peut accéder à l&rsquo;état ou déclencher des actions peu importe ou il se trouve dans l&rsquo;arborescence. C&rsquo;est redux.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  My New Hugo Site 2024 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

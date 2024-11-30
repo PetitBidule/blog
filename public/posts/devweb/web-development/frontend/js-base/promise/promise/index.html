@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Promise
+L&rsquo;objet Promise (pour &ldquo;promesse en français&rdquo;) est utilisé pour réaliser des traitements de façon asynchrone. Une promesse représente une valeur qui peut-être disponible maintenant, dans le futur voire jamais.
+Une promesse se construit avec une fonction qui recevra 2 callbacks que l&rsquo;on pourra appeler en cas de succès ou d&rsquo;échec de la logique.
+Rappel sur les fonction de rappel (callback):
+Une fonction de rappel est une fonction passée dans une autre fonction an tant qu&rsquo;argument, qui est ensuite invoquée à l&rsquo;intérieur de la fonction externe pour accomplir une sorte de routine ou d&rsquo;action.">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/devweb/web-development/frontend/js-base/promise/promise/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/devweb/web-development/frontend/js-base/promise/promise/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="My New Hugo Site">
+  <meta property="og:description" content="Promise L’objet Promise (pour “promesse en français”) est utilisé pour réaliser des traitements de façon asynchrone. Une promesse représente une valeur qui peut-être disponible maintenant, dans le futur voire jamais.
+Une promesse se construit avec une fonction qui recevra 2 callbacks que l’on pourra appeler en cas de succès ou d’échec de la logique.
+Rappel sur les fonction de rappel (callback): Une fonction de rappel est une fonction passée dans une autre fonction an tant qu’argument, qui est ensuite invoquée à l’intérieur de la fonction externe pour accomplir une sorte de routine ou d’action.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta itemprop="name" content="My New Hugo Site">
+  <meta itemprop="description" content="Promise L’objet Promise (pour “promesse en français”) est utilisé pour réaliser des traitements de façon asynchrone. Une promesse représente une valeur qui peut-être disponible maintenant, dans le futur voire jamais.
+Une promesse se construit avec une fonction qui recevra 2 callbacks que l’on pourra appeler en cas de succès ou d’échec de la logique.
+Rappel sur les fonction de rappel (callback): Une fonction de rappel est une fonction passée dans une autre fonction an tant qu’argument, qui est ensuite invoquée à l’intérieur de la fonction externe pour accomplir une sorte de routine ou d’action.">
+  <meta itemprop="wordCount" content="423">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My New Hugo Site">
+  <meta name="twitter:description" content="Promise L’objet Promise (pour “promesse en français”) est utilisé pour réaliser des traitements de façon asynchrone. Une promesse représente une valeur qui peut-être disponible maintenant, dans le futur voire jamais.
+Une promesse se construit avec une fonction qui recevra 2 callbacks que l’on pourra appeler en cas de succès ou d’échec de la logique.
+Rappel sur les fonction de rappel (callback): Une fonction de rappel est une fonction passée dans une autre fonction an tant qu’argument, qui est ensuite invoquée à l’intérieur de la fonction externe pour accomplir une sorte de routine ou d’action.">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="promise">Promise</h1>
+<p>L&rsquo;objet Promise (pour &ldquo;promesse en français&rdquo;) est utilisé pour réaliser des traitements de façon asynchrone. Une promesse représente une valeur qui peut-être disponible maintenant, dans le futur voire jamais.</p>
+<p>Une promesse se construit avec une fonction qui recevra 2 <strong>callbacks</strong> que l&rsquo;on pourra appeler en cas de succès ou d&rsquo;échec de la logique.</p>
+<h3 id="rappel-sur-les-fonction-de-rappel-callback">Rappel sur les fonction de rappel (callback):</h3>
+<p>Une fonction de rappel est une fonction passée dans une autre fonction an tant qu&rsquo;argument, qui est ensuite invoquée à l&rsquo;intérieur de la fonction externe pour accomplir une sorte de routine ou d&rsquo;action.</p>
+<p>Exemple:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">salutation</span>(<span style="color:#a6e22e">name</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">alert</span> (<span style="color:#e6db74">&#39;Bonjour&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">name</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">processUserInput</span>(<span style="color:#a6e22e">callback</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">prompt</span>(<span style="color:#e6db74">&#39;Entrez votre nom&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">callback</span>(<span style="color:#a6e22e">name</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">processUserInput</span>(<span style="color:#a6e22e">salutation</span>)
+</span></span></code></pre></div><h3 id="fin-rappel">Fin Rappel</h3>
+<p>Reprenons sur les promesse:
+Exemple:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">wait</span> (<span style="color:#a6e22e">duration</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">reject</span>) =&gt;{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setTimeout</span>(()=&gt; <span style="color:#a6e22e">resolve</span>(<span style="color:#a6e22e">duration</span>), <span style="color:#a6e22e">duration</span>)
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>} 
+</span></span></code></pre></div><p>Une promesse peut être dans un de ces 3 états:</p>
+<ul>
+<li>pending (en attente): état initial, la promesse n&rsquo;est ni remplie, ni rompue;</li>
+<li>fulfilled (tenue): l&rsquo;opération a réussi;</li>
+<li>rejected (rompue): l&rsquo;opération a échoué</li>
+</ul>
+<p>On pourra utiliser 3 méthodes pour suivre la résolution de la promesse.</p>
+<ul>
+<li>==<strong>.then(callback)</strong>==, si la promesse a été résolue.
+La then méthode prend jusqu&rsquo;à 2 arguments: <em>then</em> sera appelé si la promesse est tenue.
+Exemple:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">promise1</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">reject</span>)=&gt;{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;Succes&#34;</span>)
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">promise1</span>.<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">value</span>)=&gt;{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">value</span>);
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// on obtient: &#34;Succes&#34;
+</span></span></span></code></pre></div><ul>
+<li>==<strong>.catch(callback)</strong>==, si la promesse a échoué.
+La catch méthode permet de planifié l&rsquo;appel d&rsquo;une fonction lorsque la promesse est rejeté.
+(pour simplifier <em>catch</em> sera appelée si la promesse est rompue).
+Exemple:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">promise1</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">reject</span>) <span style="color:#f92672">=</span> <span style="color:#f92672">&gt;</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">throw</span> <span style="color:#e6db74">&#39;Uh-oh!&#39;</span>
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">promise1</span>.<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">error</span>)=&gt;{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#a6e22e">error</span>);
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// on obtient: &#34;Uh-oh:&#34;
+</span></span></span></code></pre></div><ul>
+<li>==<strong>.finally(callback)</strong>==, si la promesse a échoué ou a été tenue.
+Il sera appelé quoi qu&rsquo;il arrive.
+Exemple: (pas ouf mais bon c&rsquo;est tjrs ça)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">checkMail</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">reject</span>)=&gt;{
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (Math.<span style="color:#a6e22e">random</span>()<span style="color:#f92672">&gt;</span><span style="color:#a6e22e">O</span>.<span style="color:#ae81ff">5</span>){
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#39;Mail has arrived&#39;</span>);
+</span></span><span style="display:flex;"><span>        }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">reject</span>(<span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;Failed to arrive&#39;</span>))
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">checkMail</span>()
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">mail</span>)=&gt;{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">mail</span>)
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">err</span>)=&gt;{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">finally</span>(()=&gt;{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Experiment completed&#39;</span>)
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><h1 id="await--async">Await &amp; Async</h1>
+<p>Une méthode peut être déclarée comme asynchrone grâce au mot clef <strong>aync</strong>. Dans ce cas, le retour de la fonction sera une promesse.</p>
+<p>Exemple:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">maFonction</span> (){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">maFonction</span>())
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//Promise {&lt;fulfilled&gt;:4}
+</span></span></span></code></pre></div><p>Dans une fonction asynchrone il est possible d&rsquo;utiliser le mot clef <strong>await</strong> pour attendre la résolution d&rsquo;une Promise et obtenir la résultat.
+Exemple:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">maFonction</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">autreFonctionAsynchrone</span>()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">data</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Si la Promise du await échoue on pourra capturer l&rsquo;erreur à l&rsquo;aide de la syntaxe <strong>try&hellip;catch</strong> classique.
+Exemple:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">maFonction</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">autreFonctionAsynchrone</span>()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">data</span>
+</span></span><span style="display:flex;"><span>    }<span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">e</span>){
+</span></span><span style="display:flex;"><span>        (...)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  My New Hugo Site 2024 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

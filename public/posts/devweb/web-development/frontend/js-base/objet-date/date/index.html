@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Date:
+Les objets JS Date représentent un instant donné sur l&rsquo;axe du temps dans un format indépendant de la plateforme utilisée.
+Les objets Date contiennent un nombre ( number ) qui représente le nombre de millisecondes écoulées depuis le premier janvier 1970 sur l&rsquo;échelle UTC.
+UTC: Temps universel coordonnée ou (UTC) est une échelle de temps adoptée comme base du temps civil international par la majorité des pays du globe.">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/devweb/web-development/frontend/js-base/objet-date/date/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/devweb/web-development/frontend/js-base/objet-date/date/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="My New Hugo Site">
+  <meta property="og:description" content="Date: Les objets JS Date représentent un instant donné sur l’axe du temps dans un format indépendant de la plateforme utilisée. Les objets Date contiennent un nombre ( number ) qui représente le nombre de millisecondes écoulées depuis le premier janvier 1970 sur l’échelle UTC.
+UTC: Temps universel coordonnée ou (UTC) est une échelle de temps adoptée comme base du temps civil international par la majorité des pays du globe.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta itemprop="name" content="My New Hugo Site">
+  <meta itemprop="description" content="Date: Les objets JS Date représentent un instant donné sur l’axe du temps dans un format indépendant de la plateforme utilisée. Les objets Date contiennent un nombre ( number ) qui représente le nombre de millisecondes écoulées depuis le premier janvier 1970 sur l’échelle UTC.
+UTC: Temps universel coordonnée ou (UTC) est une échelle de temps adoptée comme base du temps civil international par la majorité des pays du globe.">
+  <meta itemprop="wordCount" content="325">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My New Hugo Site">
+  <meta name="twitter:description" content="Date: Les objets JS Date représentent un instant donné sur l’axe du temps dans un format indépendant de la plateforme utilisée. Les objets Date contiennent un nombre ( number ) qui représente le nombre de millisecondes écoulées depuis le premier janvier 1970 sur l’échelle UTC.
+UTC: Temps universel coordonnée ou (UTC) est une échelle de temps adoptée comme base du temps civil international par la majorité des pays du globe.">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="date">Date:</h1>
+<p>Les objets JS <strong>Date</strong> représentent un instant donné sur l&rsquo;axe du temps dans un format indépendant de la plateforme utilisée.
+Les objets Date contiennent un nombre ( <!-- raw HTML omitted -->number<!-- raw HTML omitted --> ) qui représente le nombre de millisecondes écoulées depuis le premier janvier 1970 sur l&rsquo;échelle <!-- raw HTML omitted -->UTC<!-- raw HTML omitted -->.</p>
+<p><!-- raw HTML omitted -->UTC<!-- raw HTML omitted -->: Temps universel coordonnée ou (UTC) est une échelle de temps adoptée comme base du temps civil international par la majorité des pays du globe.</p>
+<h2 id="constructeur-date">Constructeur Date():</h2>
+<p>Crée une instance d&rsquo;un objet JS <strong>Date</strong> qui représente un instant donné de façon indépendante de la plateforme. Les objets Date contiennent un nombre( <!-- raw HTML omitted -->Number<!-- raw HTML omitted --> ) qui représente le nombre de millisecondes écoulées depuis le premier janvier 1970.</p>
+<h2 id="syntaxe">Syntaxe</h2>
+<blockquote>
+<p>new Date()
+new Date(year, monthIndex)
+new Date(year, monthIndex, day)
+new Date(year, monthIndex, day, hours)
+new Date(year, monthIndex, day, hours, &hellip;)</p>
+</blockquote>
+<p><!-- raw HTML omitted -->Rmq<!-- raw HTML omitted -->: Les mois commencent à 0</p>
+<h2 id="méthodes">Méthodes:</h2>
+<p>Nous pouvons retrouver différentes méthodes.</p>
+<ul>
+<li><strong>==Date.prototype.getDate()==</strong>
+<ul>
+<li>La méthode getDate() retourne le jour du mois pour la date spécifiée d&rsquo;après l&rsquo;heure locale.</li>
+</ul>
+</li>
+</ul>
+<p>Exemple:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">birthday</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date(<span style="color:#e6db74">&#39;August 19, 1975 23:15:30&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">date1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">birthday</span>.<span style="color:#a6e22e">getDate</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">date1</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// retourne 19
+</span></span></span></code></pre></div><ul>
+<li><strong>==Date.prototype.getDay()==</strong>
+<ul>
+<li>La méthode getDay() renvoie le jour de la semaine pour la date spécifiée selon l&rsquo;heure locale (0 correspond à dimanche).</li>
+</ul>
+</li>
+</ul>
+<p>Exemple:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">birthday</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date(<span style="color:#e6db74">&#39;August 19, 1975 23:15:30&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">day1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">birthday</span>.<span style="color:#a6e22e">getDay</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">day1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// retourne 2 soit mardi
+</span></span></span></code></pre></div><hr>
+<hr>
+<h3 id="petite-parenthèse">Petite parenthèse:</h3>
+<p>Pour pouvoir afficher le nom complet du jour on pourra utiliser une autre méthode: ==<strong>Intl.DateTimeFormat</strong>==</p>
+<hr>
+<p>( L&rsquo;objet <strong>Intl</strong> est l&rsquo;espace de noms pour l&rsquo;API d&rsquo;Internationalisation. Elle fournit des outils de comparaison de chaînes de caractère, de formatage de nombre, de dates et de l&rsquo;heure selon les langues.)</p>
+<hr>
+<p>Exemple:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">date</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date(Date.<span style="color:#a6e22e">UTC</span>(<span style="color:#ae81ff">2020</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">23</span>, <span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">738</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Intl</span>.<span style="color:#a6e22e">DateTimeFormat</span>(<span style="color:#e6db74">&#39;en-US&#39;</span>).<span style="color:#a6e22e">format</span>(<span style="color:#a6e22e">date</span>))
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// retourne &#34;12/20/2020&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Intl</span>.<span style="color:#a6e22e">DateTimeFormat</span>(<span style="color:#e6db74">&#39;en-GB&#39;</span>,{<span style="color:#a6e22e">dateStyle</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;full&#39;</span>, <span style="color:#a6e22e">timeStyle</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;long&#39;</span>}).<span style="color:#a6e22e">format</span>(<span style="color:#a6e22e">date</span>));
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &#39;Sunday, 20 December 2020 at 14:23:16 GMT+11&#39;
+</span></span></span></code></pre></div><h3 id="fin-de-cette-petite-parenthèse">Fin de cette petite parenthèse</h3>
+<ul>
+<li><strong>==Date.prototype.getFullYear()==</strong>
+<ul>
+<li>La méthode getFullYear() renvoie l&rsquo;année de la date renseignée d&rsquo;après l&rsquo;heure locale.</li>
+</ul>
+</li>
+</ul>
+<p>Exemple:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">monnLanding</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date(<span style="color:#e6db74">&#39;July 20, 69 00:20:18&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">moonLanding</span>.<span style="color:#a6e22e">getFullYear</span>());
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// retourne 1969
+</span></span></span></code></pre></div><ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  My New Hugo Site 2024 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="SSRF signifie Server-Side Request Forgery (falsification de requête côté serveur).
+Il s&rsquo;agit d&rsquo;une vulnérabilité qui permet à un utilisateur malveillant de forcer le serveur web à effectuer une requête HTTP supplémentaire ou modifiée sur la ressource choisie par l&rsquo;attaquant.
+Exemple
+Les vulnérabilités SSRF peuvent être repérées dans les applications Web de différentes manières.
+
+Lorsqu&rsquo;une URL complète est utilisée dans un paramètre de la barre d&rsquo;adresse:![[Pasted image 20240926143538.png]]
+Un champ caché dans un formulaire:![[Pasted image 20240926180055.png]]
+Une URL partielle telle que simplement le nom d&rsquo;hôte:![[Pasted image 20240926180127.png]]
+Le chemin de l&rsquo;URL:![[Pasted image 20240926180212.png]]
+
+Le counter:
+Liste de refus:
+Une Liste de refus est une liste dans laquelle toutes les demandes sont acceptées, à l&rsquo;exception des ressources spécifiées dans une liste ou correspondant à un modèle particulier.">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/cyber/web-hacking/ssrf/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/cyber/web-hacking/ssrf/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="My New Hugo Site">
+  <meta property="og:description" content="SSRF signifie Server-Side Request Forgery (falsification de requête côté serveur). Il s’agit d’une vulnérabilité qui permet à un utilisateur malveillant de forcer le serveur web à effectuer une requête HTTP supplémentaire ou modifiée sur la ressource choisie par l’attaquant.
+Exemple Les vulnérabilités SSRF peuvent être repérées dans les applications Web de différentes manières.
+Lorsqu’une URL complète est utilisée dans un paramètre de la barre d’adresse:![[Pasted image 20240926143538.png]] Un champ caché dans un formulaire:![[Pasted image 20240926180055.png]] Une URL partielle telle que simplement le nom d’hôte:![[Pasted image 20240926180127.png]] Le chemin de l’URL:![[Pasted image 20240926180212.png]] Le counter: Liste de refus: Une Liste de refus est une liste dans laquelle toutes les demandes sont acceptées, à l’exception des ressources spécifiées dans une liste ou correspondant à un modèle particulier.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta itemprop="name" content="My New Hugo Site">
+  <meta itemprop="description" content="SSRF signifie Server-Side Request Forgery (falsification de requête côté serveur). Il s’agit d’une vulnérabilité qui permet à un utilisateur malveillant de forcer le serveur web à effectuer une requête HTTP supplémentaire ou modifiée sur la ressource choisie par l’attaquant.
+Exemple Les vulnérabilités SSRF peuvent être repérées dans les applications Web de différentes manières.
+Lorsqu’une URL complète est utilisée dans un paramètre de la barre d’adresse:![[Pasted image 20240926143538.png]] Un champ caché dans un formulaire:![[Pasted image 20240926180055.png]] Une URL partielle telle que simplement le nom d’hôte:![[Pasted image 20240926180127.png]] Le chemin de l’URL:![[Pasted image 20240926180212.png]] Le counter: Liste de refus: Une Liste de refus est une liste dans laquelle toutes les demandes sont acceptées, à l’exception des ressources spécifiées dans une liste ou correspondant à un modèle particulier.">
+  <meta itemprop="wordCount" content="200">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My New Hugo Site">
+  <meta name="twitter:description" content="SSRF signifie Server-Side Request Forgery (falsification de requête côté serveur). Il s’agit d’une vulnérabilité qui permet à un utilisateur malveillant de forcer le serveur web à effectuer une requête HTTP supplémentaire ou modifiée sur la ressource choisie par l’attaquant.
+Exemple Les vulnérabilités SSRF peuvent être repérées dans les applications Web de différentes manières.
+Lorsqu’une URL complète est utilisée dans un paramètre de la barre d’adresse:![[Pasted image 20240926143538.png]] Un champ caché dans un formulaire:![[Pasted image 20240926180055.png]] Une URL partielle telle que simplement le nom d’hôte:![[Pasted image 20240926180127.png]] Le chemin de l’URL:![[Pasted image 20240926180212.png]] Le counter: Liste de refus: Une Liste de refus est une liste dans laquelle toutes les demandes sont acceptées, à l’exception des ressources spécifiées dans une liste ou correspondant à un modèle particulier.">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>SSRF signifie Server-Side Request Forgery (falsification de requête côté serveur).
+Il s&rsquo;agit d&rsquo;une vulnérabilité qui permet à un utilisateur malveillant de forcer le serveur web à effectuer une requête HTTP supplémentaire ou modifiée sur la ressource choisie par l&rsquo;attaquant.</p>
+<h2 id="exemple">Exemple</h2>
+<p>Les vulnérabilités SSRF peuvent être repérées dans les applications Web de différentes manières.</p>
+<ul>
+<li>Lorsqu&rsquo;une URL complète est utilisée dans un paramètre de la barre d&rsquo;adresse:![[Pasted image 20240926143538.png]]</li>
+<li>Un champ caché dans un formulaire:![[Pasted image 20240926180055.png]]</li>
+<li>Une URL partielle telle que simplement le nom d&rsquo;hôte:![[Pasted image 20240926180127.png]]</li>
+<li>Le chemin de l&rsquo;URL:![[Pasted image 20240926180212.png]]</li>
+</ul>
+<h2 id="le-counter">Le counter:</h2>
+<h3 id="liste-de-refus">Liste de refus:</h3>
+<p>Une Liste de refus est une liste dans laquelle toutes les demandes sont acceptées, à l&rsquo;exception des ressources spécifiées dans une liste ou correspondant à un modèle particulier.</p>
+<h3 id="liste-dautorisation">Liste d&rsquo;autorisation:</h3>
+<p>Une liste d&rsquo;autorisation est une liste dans laquelle toutes les demandes sont refusées, sauf si elles apparaissent sur une liste ou correspondent à un modèle particulier, comme une règle selon laquelle une URL utilisée dans un paramètre doit commencer par <a href="https://theolegoat.com">https://theolegoat.com</a> (par exemple xD);</p>
+<h3 id="ouvrir-la-redirection">Ouvrir la redirection</h3>
+<p>Une redirection ouverte est un point de terminaison sur le serveur où le visiteur du site-web est automatiquement redirigé vers une autre adresse de site web.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  My New Hugo Site 2024 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

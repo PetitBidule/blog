@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Objet filtre
+Toute combinaison des éléments suivants peut être utilisée à l&rsquo;intérieur d&rsquo;un objet filtre pour effectuer des requêtes complexes.
+
+$or
+$and
+
+
+
+$gt: supérieur à
+$gte: supérieur ou égal à
+Exemple:
+
+db.users.find({ age: { $gt: 12 } })
+db.users.find({ age: { $gte: 15 } })
+
+$lt: moins que
+$lte: inférieur ou égal à
+Exemple:
+
+db.users.find({ age: { $lt: 12 } })
+db.users.find({ age: { $lte: 15 } })
+
+
+$set: remplace la valeur d&rsquo;un champ par la valeur spécifiée.
+$push: ajoute une nouvelle valeur dans un tableau.
+$in: sélectionner les documents dans lesquels la valeur d&rsquo;un champ est égale à n&rsquo;importe quelle valeur du tableau spécifiée.
+$elemMatch: limite le contenu d&rsquo;un array.
+">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/devweb/web-development/backend/mongodb/objet-filtre/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/devweb/web-development/backend/mongodb/objet-filtre/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="My New Hugo Site">
+  <meta property="og:description" content="Objet filtre Toute combinaison des éléments suivants peut être utilisée à l’intérieur d’un objet filtre pour effectuer des requêtes complexes.
+$or $and $gt: supérieur à $gte: supérieur ou égal à Exemple: db.users.find({ age: { $gt: 12 } }) db.users.find({ age: { $gte: 15 } }) $lt: moins que $lte: inférieur ou égal à Exemple: db.users.find({ age: { $lt: 12 } }) db.users.find({ age: { $lte: 15 } }) $set: remplace la valeur d’un champ par la valeur spécifiée. $push: ajoute une nouvelle valeur dans un tableau. $in: sélectionner les documents dans lesquels la valeur d’un champ est égale à n’importe quelle valeur du tableau spécifiée. $elemMatch: limite le contenu d’un array.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta itemprop="name" content="My New Hugo Site">
+  <meta itemprop="description" content="Objet filtre Toute combinaison des éléments suivants peut être utilisée à l’intérieur d’un objet filtre pour effectuer des requêtes complexes.
+$or $and $gt: supérieur à $gte: supérieur ou égal à Exemple: db.users.find({ age: { $gt: 12 } }) db.users.find({ age: { $gte: 15 } }) $lt: moins que $lte: inférieur ou égal à Exemple: db.users.find({ age: { $lt: 12 } }) db.users.find({ age: { $lte: 15 } }) $set: remplace la valeur d’un champ par la valeur spécifiée. $push: ajoute une nouvelle valeur dans un tableau. $in: sélectionner les documents dans lesquels la valeur d’un champ est égale à n’importe quelle valeur du tableau spécifiée. $elemMatch: limite le contenu d’un array.">
+  <meta itemprop="wordCount" content="111">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My New Hugo Site">
+  <meta name="twitter:description" content="Objet filtre Toute combinaison des éléments suivants peut être utilisée à l’intérieur d’un objet filtre pour effectuer des requêtes complexes.
+$or $and $gt: supérieur à $gte: supérieur ou égal à Exemple: db.users.find({ age: { $gt: 12 } }) db.users.find({ age: { $gte: 15 } }) $lt: moins que $lte: inférieur ou égal à Exemple: db.users.find({ age: { $lt: 12 } }) db.users.find({ age: { $lte: 15 } }) $set: remplace la valeur d’un champ par la valeur spécifiée. $push: ajoute une nouvelle valeur dans un tableau. $in: sélectionner les documents dans lesquels la valeur d’un champ est égale à n’importe quelle valeur du tableau spécifiée. $elemMatch: limite le contenu d’un array.">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="objet-filtre">Objet filtre</h1>
+<p>Toute combinaison des éléments suivants peut être utilisée à l&rsquo;intérieur d&rsquo;un objet filtre pour effectuer des requêtes complexes.</p>
+<ul>
+<li>$or</li>
+<li>$and</li>
+</ul>
+<hr>
+<ul>
+<li>$gt: supérieur à</li>
+<li>$gte: supérieur ou égal à
+Exemple:</li>
+</ul>
+<pre tabindex="0"><code>db.users.find({ age: { $gt: 12 } })
+db.users.find({ age: { $gte: 15 } })
+</code></pre><ul>
+<li>$lt: moins que</li>
+<li>$lte: inférieur ou égal à
+Exemple:</li>
+</ul>
+<pre tabindex="0"><code>db.users.find({ age: { $lt: 12 } })
+db.users.find({ age: { $lte: 15 } })
+</code></pre><hr>
+<ul>
+<li>$set: remplace la valeur d&rsquo;un champ par la valeur spécifiée.</li>
+<li>$push: ajoute une nouvelle valeur dans un tableau.</li>
+<li>$in: sélectionner les documents dans lesquels la valeur d&rsquo;un champ est égale à n&rsquo;importe quelle valeur du tableau spécifiée.</li>
+<li>$elemMatch: limite le contenu d&rsquo;un array.</li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  My New Hugo Site 2024 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

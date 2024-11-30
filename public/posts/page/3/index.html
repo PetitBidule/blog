@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+    
+      <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+      <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="My New Hugo Site" />
+      
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="Posts">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Posts">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Posts">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          Posts
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
+    <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/devweb/atlassian/forgeui-vs-customui/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h2 id="forge">Forge</h2>
+<p>Petite Def: <strong>ForgeUI</strong> est un kit d&rsquo;interface utilisateur basé sur React pour améliorer les produits Forge.</p>
+<p><strong>Les avantages:</strong></p>
+<ul>
+<li>directement intégrée lorsqu&rsquo;on crée une forge app, donc pas besoin d&rsquo;installer les composants un par un.</li>
+<li><strong>Simple</strong>, rapides et pratique d&rsquo;utilisation</li>
+<li>Fourni autant de composant que AtlasKit (il y en a un peu moins mais c&rsquo;est suffisant pour notre app).</li>
+<li>utile pour des petits projets</li>
+</ul>
+<p><strong>Inconvénients:</strong></p>
+<ul>
+<li><strong>Limité</strong>: dans notre cas la création de DnD n&rsquo;est pas fournis (c&rsquo;est pas très grave parce que je peux le faire en full react)</li>
+<li>L&rsquo;utilisation de Typescript entraîne des échecs de déploiement (d&rsquo;&lsquo;apres la doc).</li>
+<li>moins complet que atlaskit.</li>
+</ul>
+<hr>
+<h2 id="customui">CustomUI</h2>
+<p><strong>CustomUI</strong> (atlasKit (system de conception)): permet de créer l&rsquo;interface à partir de 0.</p>
+    </div>
+    <a href="/posts/devweb/atlassian/forgeui-vs-customui/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/devweb/atlassian/install-custom-ui-router-app-forge/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>Install Custom Ui Router App forge</p>
+<p>créer une app classique ensuite<br>
+le manifest doit ressembler à ceci:<br>
+(je rajouterai ensuite les scopes pour les api etc, )</p>
+<p><img src="../_resources/Capture%20d_%C3%A9cran%202024-05-03%20130419.png" alt="Capture d&rsquo;écran 2024-05-03 130419.png"></p>
+<p>ensuite</p>
+<p>accedes au <strong>static/</strong> répertoire, <code>npm install react-router</code>, puis <code>npm install @forge/bridge@latest</code>, après dans le <strong>src/App.js</strong> et coller ce code que j&rsquo;ai repris de la doc et que j&rsquo;ai intéger à mon app, avant de faire ceci créer les différents dossier pour les view.</p>
+    </div>
+    <a href="/posts/devweb/atlassian/install-custom-ui-router-app-forge/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/devweb/others/api/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h1 id="api">API</h1>
+<p>API = (Application Programming Interface) sont comme des portes secrètes permettant à différents logiciels de communiquer.
+Mais tout le monde ne devrait pas avoir les clés de chaque porte.</p>
+<h2 id="api-authorization">API Authorization</h2>
+<h3 id="authentification">Authentification</h3>
+<p>Consiste à vérifier l&rsquo;identité. C&rsquo;est comme confirmer l&rsquo;identité d&rsquo;un user via son nom d&rsquo;utilisateur ou autres choses.</p>
+<h3 id="autorisation">Autorisation</h3>
+<p>Consiste à accorder l&rsquo;accès à des ressources ou à des fonctionnalités une fois l&rsquo;identité confirmée.</p>
+<p>Exemple:
+L&rsquo;authentification consiste à franchir la porte d&rsquo;entrée de la maison, et l&rsquo;autorisation détermine à quelles pièces et services la personne peut accéder</p>
+    </div>
+    <a href="/posts/devweb/others/api/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/devweb/others/ascii/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h1 id="ascii">ASCII</h1>
+<p>ASCII = American Standard Code for Informaticien Interchange)</p>
+<p>Méthodes d&rsquo;<em>encodage</em> utilisées par les ordinateurs pour convertir les lettres, les nombres, la ponctuation sous forme numérique.</p>
+<p><img src="../_resources/1000px-ASCII-Table-wide.svg.png" alt="1000px-ASCII-Table-wide.svg.png"></p>
+<h4 id="encodage"><em>encodage</em></h4>
+<p>Un encodage définit une correspondance entre les octets et le texte.
+Une séquence d&rsquo;octets permet différentes interprétations textuelles.
+une séquence d&rsquo;octets = un caractères.</p>
+<p>En spécifiant un codage particulier comme <strong>UTF-8</strong>, nous spécifions comment la séquence d&rsquo;octets doit etre interprétée</p>
+<p><strong>UTF-8</strong> est le <strong>codage de caractères</strong> = <em>encodage</em> le plus connu et le plus utilisé,
+chaque caractère est représenté par un à 4 octets.</p>
+    </div>
+    <a href="/posts/devweb/others/ascii/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/devweb/others/cdn/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h1 id="cdn">CDN</h1>
+<p>CDN = Content Delivery Network / Réseau de diffusion de contenu</p>
+<p>Groupe de serveurs répartis en de nombreux endroits.
+Généralement utilisés pour diffuser du contenu statique tel que Javascript, HTML, CSS, des images, des videos &hellip;
+Ils mettent en cache le contenu du serveur d&rsquo;origine et le diffusent aux user à partir du serveur CDN le plus proche.</p>
+<h1 id="mise-en-cache">Mise en cache</h1>
+<p>Consiste a stocker une copie de certaines données dans une zone de stockage temporaire afin que les futures demandes de ces données puissent être traitées plus rapidement.
+Il existe différent emplacement ou on peut stocker les données mises en cache.
+Opti des perf
+gestion automatique pas le navigateur</p>
+    </div>
+    <a href="/posts/devweb/others/cdn/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/devweb/others/cookie/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h1 id="cookie">Cookie</h1>
+<p>les cookies = petits élément de donnés stockés sur le pc.</p>
+<p>Les cookies sont enregistrés lorsque vous recevez un en tête &ldquo;Set-cookie&rdquo; d&rsquo;un serveur web.
+Ensuite, à chaque nouvelle demande que tu fais, tu renvoie les données du cookie au serveur web.
+Etant donné que http est sans état (ne garde donc pas la trace de des demandes précédentes), les cookies sont un bon moyen pour être utilisés pour rappeler au serveur web qui tu es.</p>
+    </div>
+    <a href="/posts/devweb/others/cookie/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/devweb/others/curl/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h2 id="curl">curl</h2>
+<p>cURL = client URL request library.</p>
+    </div>
+    <a href="/posts/devweb/others/curl/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/devweb/others/cyber-security/basics/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h1 id="basics">Basics</h1>
+<h2 id="bases-des-réseaux-informatiques">Bases des réseaux informatiques</h2>
+<h3 id="types-de-réseaux">Types de réseaux</h3>
+<ul>
+<li>Réseau personnel (PAN): connecte les appareils au seil d&rsquo;un espace de travail individuel, généralement dans un rayon de 10 mètres.</li>
+<li>Réseau Local (LAN): couvre une petite zone géographique, comme une maison ou un bureau, connectant plusieurs ordinateurs et autres appareils.</li>
+<li>Réseau étendu (WAN):  couvre une zone géographique plus vaste, interconnectant différents réseaux locaux, souvent à l&rsquo;aide de lignes de télécommunication louées ou de liaisons sans fil.</li>
+<li>Réseau privé virtuel (VPN): un réseau sécurisé établi sur l&rsquo;Internet Public, cryptant les données transférées et restreignant l&rsquo;accès aux utilisateurs autorisés uniquement.</li>
+</ul>
+<h3 id="types-de-shell">Types de shell</h3>
+<ul>
+<li>Les Shells inversés se produisent lorsque la cible est obligée d&rsquo;exécuter du code qui se reconnecte à votre ordinateur.</li>
+<li>Les Shells de liaison se produisent lorsque le code exécuté sur la cible est utilisé pour démarrer un écouteur attaché à un shell directement sur la cible.</li>
+</ul>
+<h3 id="différence-shell-vs-terminal">Différence Shell vs Terminal</h3>
+<ul>
+<li>Terminal = dispositif d&rsquo;interface utilisateur permettant d&rsquo;interagir avec un ordinateur.</li>
+<li>Shell = interpréteur de commandes qui permet d&rsquo;interagir avec le système d&rsquo;exploitation.</li>
+</ul>
+<p>Le terminal est un conteneur ou une interface qui héberge le shell. Ce dernier est le logiciel qui interprète les commandes saisies dans le terminal.</p>
+    </div>
+    <a href="/posts/devweb/others/cyber-security/basics/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/devweb/others/cyber-security/frontend-security/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h1 id="frontend-security">Frontend Security</h1>
+<h2 id="xss">XSS</h2>
+<h2 id="sql-injections">SQL Injections</h2>
+<h2 id="cross-site-request-forgery">Cross Site Request Forgery</h2>
+<h2 id="a-man-in-the-middle">A Man-in-the-Middle</h2>
+<h2 id="clickjacking">Clickjacking</h2>
+<h2 id="security-misconfiguration-attacks">Security Misconfiguration Attacks</h2>
+<h2 id="dependency-exploitation">Dependency Exploitation</h2>
+<h2 id="csp">CSP</h2>
+<p>Politique de sécurité du contenu est une couche de sécurité supplémentaire qui permet de détecter et d&rsquo;atténuer certains types d&rsquo;attaques comme les attaques XSS et SQLI</p>
+<h2 id="idor-insecure-direct-object-reference">IDOR (Insecure Direct Object Reference)</h2>
+<h2 id="défaillance-cryptographique">Défaillance Cryptographique</h2>
+<h1 id="cryptographie">Cryptographie</h1>
+<p>La cryptographie est uitlisée pour protéger la confidentialité, garantir l&rsquo;intégrité et garantir l&rsquo;authenticité.</p>
+<h2 id="hexadecimal--base16">Hexadecimal == base16</h2>
+<p>Utilisé pour désigner un système de numérotation en base 16.
+Les nombres sont représentés en utilisant les chiffres de 0 à 9 et les lettre de 1 à F</p>
+    </div>
+    <a href="/posts/devweb/others/cyber-security/frontend-security/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/devweb/others/cyber-security/malware/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h1 id="malware">Malware</h1>
+<p>Malware (logicile Malveillant) est un terme utilisé pour décrire tout programme ou code crée dans le but de nuire à un ordinateur, un réseau ou un serveur.
+Logiciels malveillants:</p>
+<h2 id="ransomware">Ransomware:</h2>
+<p>Ransomware est un type de malware qui crypte une v</p>
+<p>ftp réseau
+firewall
+son propre serveur web en local
+.</p>
+    </div>
+    <a href="/posts/devweb/others/cyber-security/malware/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+    </section>
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/posts/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/2/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 3" class="page-link" role="button">3</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/5/" aria-label="Page 5" class="page-link" role="button">5</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/4/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/12/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul></article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  My New Hugo Site 2024 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
